@@ -1,0 +1,20 @@
+<header class="masthead clearfix">
+    <div class="inner">
+        <h3 class="masthead-brand" style="background-color: dimgrey; padding:0.1em 0.3em 2em 0.3em; border-top: .3em solid #EF5350;">Noti_</h3>
+        <nav class="nav nav-masthead">
+            {% if session.logged_in %}
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/articles">Articles</a>
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+            <a class="nav-link" href="/logout">Logout</a>
+
+            {% else %}
+            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="/register">Register</a>
+            <a class="nav-link active" href="/login">Login</a>
+
+            {% endif %}
+
+        </nav>
+    </div>
+</header>
